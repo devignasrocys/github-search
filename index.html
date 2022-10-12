@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body id="body">
+    <header>
+      <div class="container-row">
+        <h1 class="logo">devfinder</h1>
+        <span class="inline-container switcher-icon" id="color-switcher">
+          <p id="theme-name">LIGHT</p>
+          <img class="sun" src="./assets/icon-sun.svg" alt="" id="switcher-icon"/>
+        </span>
+      </div>
+      <div class="container">
+        <input
+          class="input"
+          type="text"
+          id="search-input"
+          placeholder="Search GitHub username..."
+        />
+        <button class="btn" id="search-btn">Search</button>
+      </div>
+    </header>
+    <main id="main">
+      <div class="container">
+        <div class="column">
+          <img class="profile-img" src="https://avatars.githubusercontent.com/u/583231?v=4" alt="" id="img-profile">
+        </div>
+        <div class="column tablet">
+          <h2 id="name">The Octocat</h2>
+          <p id="company">@octocat</p>
+          <h4 id="created-at">Joined 25 Jan 2011</h4>
+        </div>
+      </div>
+      <div class="container">
+        <p id="bio"> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div class="container darker" id="repos-container">
+        <div class="inline-container">
+          <p>Repos</p>
+          <h2 id="repos">8</h2>
+        </div>
+        <div class="inline-container">
+          <p>Followers</p>
+          <h2 id="followers">3938</h2>
+        </div>
+        <div class="inline-container">
+          <p>Following</p>
+          <h2 id="following">9</h2>
+        </div>
+      </div>
+      <div class="container column">
+        <p class="icon-container">
+          <span> <img src="./assets/icon-location.svg" alt="" class="icon"> </span>
+          <span id="location">Not Available</span>
+        </p>
+        <p class="icon-container">
+          <span> <img src="./assets/icon-website.svg" alt="" class="icon"> </span>
+          <span id="git-url">https://github.blog</span>
+        </p>
+        <p class="icon-container">
+          <span> <img src="./assets/icon-twitter.svg" alt="" class="icon"> </span>
+          <span id="twitter">Not Available</span>
+        </p>
+        <p class="icon-container">
+          <span> <img src="./assets/icon-company.svg" alt="" class="icon"> </span>
+          <span id="company-second">@github</span>
+        </p>
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
